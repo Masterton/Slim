@@ -95,5 +95,5 @@ composer update
   >> * 相关参考
   
   >>> * Migrations [数据库：迁移](http://d.laravel-china.org/docs/5.3/migrations)
-  >>> * DB[数据库：入门](http://d.laravel-china.org/docs/5.3/database)、数据库：查询构造器](http://d.laravel-china.org/docs/5.3/queries)
+  >>> * DB[数据库：入门](http://d.laravel-china.org/docs/5.3/database)、[数据库：查询构造器](http://d.laravel-china.org/docs/5.3/queries)
   >>> * Model [Eloquent:入门](http://d.laravel-china.org/docs/5.3/eloquent)
