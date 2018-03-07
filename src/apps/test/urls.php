@@ -12,16 +12,4 @@ return [
             'auth' => false
         ],
     ],
-    '/node[/]' => [
-        'get' => [
-            'handler' => 'App\Tests\Debug\NodeTest:query',
-            'name' => 'test_get_node',
-            'auth' => true
-        ],
-        'post' => [
-            'handler' => 'App\Tests\Debug\NodeTest:add',
-            'name' => 'test_add_node',
-            'auth' => true
-        ],
-    ],
 ];

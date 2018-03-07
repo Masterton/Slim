@@ -17,8 +17,8 @@ return [
             'handler' => 'App\Controllers\TestController:add',
             'name'    => 'api_get_node',
             'auth'    => true,
-            'op_class' => '节点',
-            'op_name' => '查询',
+            'op_class' => 'test',
+            'op_name' => 'test',
         ],
     ],
 ];

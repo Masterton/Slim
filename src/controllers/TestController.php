@@ -1,34 +1,45 @@
-<?php 
+<?php
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-7 17:16:56
+ */
 
 namespace App\Controllers;
 
-use App\Models\Menu;
-
+use App\Models\Test;
+use Slim\Http\Request;
+use Slim\Http\Response;
 
 /**
 * TestController
 */
 class TestController extends ControllerBase {
 
-	public function add( $request, $response, $args=[] ) {
+    public function add(Request $request, Response $response, $args=[])
+    {
+        // get parameter
+        $params = $request->getParams();
 
-		$params = $request->getParams();
-		$data = array_get($params, 'data');
-		$aa = [
-			'json' => '1212121'
-		];
+        // get file
+        $file = $request->getUploadedFiles();
 
-		$menu = new Menu;
+        // C
+        $test = new Test;
+        $menu->uid = 'test';
+        $menu->save();
 
-		$menu->uid = '987859263';
-		$menu->name = '987859263';
-		$menu->desc = '987859263';
-		$menu->icon = '987859263';
-		$menu->url = '987859263';
+        // R
+        $result = Test::all();
 
-		$menu->save();
+        // U
+        Test::where('id', 1)->update(['status' => 1]);
 
-		return $response->withJson($aa);
-	}
+        // D
+        Test::where('id', 1)->delete();
 
+        // return
+        return $response->withJson($aa);
+    }
 }
