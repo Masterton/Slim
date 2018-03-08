@@ -16,6 +16,10 @@ return [
         'prefix' => '/test',
         'urls' => require __DIR__ . '/test/urls.php'
     ],
+    'home' => [
+        'prefix' => '/',
+        'urls' => require __DIR__ . '/home/urls.php'
+    ],
     'db' => [
         'prefix' => '/db',
         'urls' => require __DIR__ . '/db/urls.php'
