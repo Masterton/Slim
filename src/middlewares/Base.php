@@ -4,6 +4,7 @@ namespace App\Middlewares;
 
 /**
  * 中间件基类
+ *
  */
 class Base {
     protected $app;

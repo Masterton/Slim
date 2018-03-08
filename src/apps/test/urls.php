@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:43:26
+ *
+ */
+
 return [
     '/ping[/]' => [
         'map' => [

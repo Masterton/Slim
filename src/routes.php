@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:44:58
+ *
+ */
+
 // Routes
 
 $sub_apps = require __DIR__ . '/apps/entry.php';

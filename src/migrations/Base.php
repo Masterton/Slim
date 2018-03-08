@@ -1,13 +1,21 @@
 <?php
 
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:26:04
+ *
+ */
+
 namespace App\Migrations;
 
 /**
-* Base Migration
-*/
+ * Base Migration
+ *
+ */
 class Base extends \Illuminate\Database\Migrations\Migration
 {
-    # https://laravel.com/docs/5.3/migrations
+    # https://laravel-china.org/docs/laravel/5.3/database
     public function __construct($table_name, $schema)
     {
         $this->schema = $schema;

@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:53:48
+ *
+ */
+
 return [
     'settings' => [
         'determineRouteBeforeAppMiddleware' => true, # https://github.com/slimphp/Slim/issues/1505

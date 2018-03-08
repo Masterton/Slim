@@ -1,18 +1,30 @@
 <?php
-namespace App\Tests\Dev;
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:57:57
+ *
+ */
+
+namespace App\Controllers;
+
+use \Slim\Http\Request;
+use \Slim\Http\Response;
 
 /**
  * DBMigration
+ *
  */
-class DBMigration extends \App\Controllers\ControllerBase
+class DBMigrationController extends ControllerBase
 {
     // 根据表名获取对象
     protected function get_object($table_name, $db)
     {
         $obj = null;
         switch ($table_name) {
-            case 'menu':
-                $obj = new \App\Migrations\Menu($table_name, $db->schema());
+            case 'test':
+                $obj = new \App\Migrations\Test($table_name, $db->schema());
                 break;
             # add <table name> with extra `case` here
             default:
@@ -28,7 +40,7 @@ class DBMigration extends \App\Controllers\ControllerBase
     }
 
     // 创建表
-    public function up(\Slim\Http\Request $request, \Slim\Http\Response $response, $args = [])
+    public function up(Request $request, Response $response, $args = [])
     {
         $table_name = array_get($args, 'table');
         $db = $this->ci->get('db');
@@ -48,7 +60,7 @@ class DBMigration extends \App\Controllers\ControllerBase
     }
 
     // 销毁表
-    public function down(\Slim\Http\Request $request, \Slim\Http\Response $response, $args = [])
+    public function down(Request $request, Response $response, $args = [])
     {
         $table_name = array_get($args, 'table');
         $db = $this->ci->get('db');

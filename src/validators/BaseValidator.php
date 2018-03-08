@@ -1,8 +1,17 @@
 <?php
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:47:47
+ *
+ */
+
 namespace App\Validators;
 
 /**
  * BaseValidator
+ *
  */
 class BaseValidator extends \Violin\Violin
 {
@@ -15,6 +24,7 @@ class BaseValidator extends \Violin\Violin
 
     /**
      * 重写规则提示信息
+     *
      */
     protected function rewriteRuleMessages()
     {

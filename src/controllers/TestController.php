@@ -3,7 +3,8 @@
 /**
  * @author Masterton
  * @version 1.0.0
- * @time 2018-3-7 17:16:56
+ * @time 2018-3-8 09:38:41
+ *
  */
 
 namespace App\Controllers;
@@ -13,9 +14,11 @@ use Slim\Http\Request;
 use Slim\Http\Response;
 
 /**
-* TestController
-*/
-class TestController extends ControllerBase {
+ * TestController
+ *
+ */
+class TestController extends ControllerBase
+{
 
     public function add(Request $request, Response $response, $args=[])
     {

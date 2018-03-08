@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:54:25
+ *
+ */
+
 // Environment
 $env_cfg = [
     'timezone' => 'Asia/Shanghai',

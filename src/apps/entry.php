@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:42:49
+ *
+ */
+
 return [
     'api' => [
         'prefix' => '/api',
@@ -9,27 +16,8 @@ return [
         'prefix' => '/test',
         'urls' => require __DIR__ . '/test/urls.php'
     ],
-    'visit' => [
-        'prefix' => '/visit',
-        'urls' => require __DIR__ . '/visit/urls.php'
-    ],
     'db' => [
         'prefix' => '/db',
-        'urls' => [
-            '/up[/[{table:\w+}[/]]]' => [
-                'get' => [
-                    'handler' => '\App\Tests\Dev\DBMigration:up',
-                    'name' => 'db_up',
-                    'auth' => true
-                ]
-            ],
-            '/down[/[{table:\w+}[/]]]' => [
-                'get' => [
-                    'handler' => '\App\Tests\Dev\DBMigration:down',
-                    'name' => 'db_down',
-                    'auth' => true
-                ]
-            ],
-        ]
+        'urls' => require __DIR__ . '/db/urls.php'
     ],
 ];

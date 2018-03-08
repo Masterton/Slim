@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @author Masterton
+ * @version 1.0.0
+ * @time 2018-3-8 09:38:09
+ *
+ */
+
 namespace App\Controllers;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -10,11 +18,15 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * ControllerBase
  * @property Builder $db
+ *
  */
 class ControllerBase
 {
     protected $ci;
-    /** @var Builder $db */
+    /**
+     * @var Builder $db
+     *
+     */
     protected $db;
 
     public function __construct(\Interop\Container\ContainerInterface $ci)
